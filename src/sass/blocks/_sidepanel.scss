@@ -17,5 +17,8 @@
     width: 20px;
     height: 19px;
     transform: rotate(90deg);
+    &:hover {
+      transform: rotate(90deg) scale(1.3);
+    }
   }
 }

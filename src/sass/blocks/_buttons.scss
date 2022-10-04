@@ -6,7 +6,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 12px 26px;
   border-radius: 2px;
+  transition: all 500ms ease;
   &:hover {
+    transform: scale(1.05);
     text-decoration: none;
     color: black;
   }
