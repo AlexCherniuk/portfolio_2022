@@ -1,0 +1,83 @@
+.resume {
+  padding-top: 120px;
+  &__title {
+    position: relative;
+    @include before-circle;
+    &:before {
+      top: -5px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    text-align: center;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 136px;
+  }
+  &__column {
+    &-title {
+      padding-left: 43px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        top: 50%;
+        left: -7px;
+        transform: translateY(-50%);
+        background-color: $main-color;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: calc(100% + 31px);
+          top: -31px;
+          left: 0px;
+          background: #000;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 43px;
+      height: 1px;
+      top: 67px;
+      background: black;
+    }
+    &-head {
+      position: relative;
+      padding: 45px 0 0 100px;
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+    &-icon {
+      position: absolute;
+      top: 57px;
+      left: 43px;
+      @include before-circle;
+      padding: 7px 0 0 16px; 
+    }
+    &-body {
+      padding-left: 43px;
+      margin-top: 12px;
+    }
+  }
+}

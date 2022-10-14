@@ -1,0 +1,60 @@
+.skills {
+  padding-top: 120px;
+  &__wrapper {
+    margin-top: 60px;
+    list-style-type: none;
+    display: grid;
+    grid-template: repeat(2, minmax(276px, 276px)) / repeat(
+        4,
+        minmax(276px, 276px)
+      );
+    grid-gap: 13px;
+  }
+  &__item {
+    border: 1px solid #000000;
+    &-logo {
+      display: grid;
+      align-items: center;
+      min-height: 95px;
+      padding: 30px 0 0 30px;
+    }
+    &-title {
+      padding: 20px 0 0 30px;
+    }
+    &-body {
+      padding: 15px 30px;
+    }
+  }
+  &__raitings {
+    display: grid;
+    margin-top: 120px;
+    grid-template: repeat(2, 70px) / repeat(3, 350px);
+    column-gap: 45px;
+    row-gap: 30px;
+    &-title {
+      position: relative;
+      padding:3px 0 0 13px;
+      @include before-circle;
+    }
+    &-item {
+      display: grid;
+      grid-template: 21px 14px / 200px 35px;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    &-line {
+      position: relative;
+      width: 350px;
+      height: 14px;
+      background: #E8E4DE;
+      border-radius: 4px;
+      span {
+        position: absolute;
+        width: 0;
+        height: 14px;
+        background: $main-color;
+        border-radius: 4px;
+      }
+    }
+  }
+}
