@@ -11,3 +11,17 @@
     background: $main-color;
   }
 }
+
+@mixin before-small-circle {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    z-index: -1;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: $main-color;
+  }
+}
