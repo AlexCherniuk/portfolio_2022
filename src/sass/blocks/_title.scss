@@ -20,4 +20,21 @@
     font-size: 12px;
     line-height: 18px;
   }
+
+//all titles
+  &__section-title {
+    position: relative;
+    @include before-circle;
+    &:before {
+      top: -5px;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    text-align: center;
+  }
+
+  //all subtitles
+  &__section-subtitle {
+    text-align: center;
+  }
 }
