@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -102,10 +102,10 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpg" alt="photo">
+                    <img class="img" src="img/main_photo.jpg" alt="photo">
                 </div>
                 <div id="about__descr" class="about__descr">
-                    <h2 class="title  about__title">About me</h2>
+                    <h2 class="title title_fs16  about__title">About me</h2>
                     <div class="title about__subtitle">My name is Alex</div>
                     <div class="divider"></div>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -368,12 +368,12 @@
             <div class="title  title__section-subtitle">My works</div>
             <div class="divider"></div>
             <div class="portfolio__wrapper">
-                <a href="#" class="portfolio__item"><img src="img/works/uber.jpg" alt="uber"></a>
-                <a href="#" class="portfolio__item"><img src="img/works/pulse.jpg" alt="pulse"></a>
-                <a href="#" class="portfolio__item"><img src="img/works/bread.jpg" alt="bread"></a>
-                <a href="#" class="portfolio__item vertical"><img src="img/works/plans.jpg" alt="plans"></a>
-                <a href="#" class="portfolio__item"><img src="img/works/ipad.jpg" alt="ipad"></a>
-                <a href="#" class="portfolio__item horisontal"><img src="img/works/mac.jpg" alt="mac"></a>
+                <a href="uber/index.html" class="portfolio__item"><img class="img" src="img/works/uber.jpg" alt="uber"></a>
+                <a href="#" class="portfolio__item"><img class="img" src="img/works/pulse.jpg" alt="pulse"></a>
+                <a href="#" class="portfolio__item"><img class="img" src="img/works/bread.jpg" alt="bread"></a>
+                <a href="#" class="portfolio__item vertical"><img class="img" src="img/works/plans.jpg" alt="plans"></a>
+                <a href="#" class="portfolio__item"><img class="img" src="img/works/ipad.jpg" alt="ipad"></a>
+                <a href="#" class="portfolio__item horisontal"><img class="img" src="img/works/mac.jpg" alt="mac"></a>
             </div>
         </div>
     </section>
@@ -411,6 +411,49 @@
                     <div class="title title_fs14 price-list__title">Design</div>
                     <div class="title title_fs14 price-list__price">Individually</div>
                     <div class="price-list__desc">Create a design for your website/application...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo"><img class="img" src="img/main_photo.jpg" alt="photo"></div>
+                <div class="contacts__content">
+                    <h2 class="title title_fs16  contacts__title">Contacts</h2>
+                    <div class="title">My contacts</div>
+                    <div class="divider"></div>
+                    <div class="title title_fs14 contacts__text">In any way convenient for you:</div>
+                    <div class="contacts__social">
+                        <a href="#"><img src="icons/contacts/Facebook.svg" alt="facebook"
+                                class="contacts__social_link"></a>
+                        <a href="#"><img src="icons/contacts/Telegram.svg" alt="telegram"
+                                class="contacts__social_link"></a>
+                        <a href="#"><img src="icons/contacts/Instagram.svg" alt="instagram"
+                                class="contacts__social_link"></a>
+                    </div>
+                    <div class="title title_fs14 contacts__text">Or leave your details and I will write to you</div>
+                    <form id="contacts-form" action="#" class="contacts__form" novalidate="novalidate">
+                        <div class="contacts__input">
+                            <input name="name" required type="text" placeholder="Your name" id="name" >
+                            <label for="name">name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input name="email" required type="email" placeholder="Your email" id="email">
+                            <label for="email">email</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" required id="text" placeholder="Your message"></textarea>
+                            <label for="text">message</label>
+                        </div>
+                        <div class="contacts__triggers">
+                            <button class="btn contacts__btn">Send message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox" name="checkbox" id="checkbox">
+                                <span>Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a></span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

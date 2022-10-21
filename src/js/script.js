@@ -16,3 +16,6 @@ const counter = document.querySelectorAll('.skills__raitings-counter'),
 counter.forEach((item, i) => {
 	lines[i].style.width = item.innerHTML;
 })
+
+
+
