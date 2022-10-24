@@ -83,7 +83,7 @@
         </div>
         <div class="menu__overlay"></div>
     </div>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="promo__hamburger">
             <span></span>
             <span></span>
@@ -368,7 +368,8 @@
             <div class="title  title__section-subtitle">My works</div>
             <div class="divider"></div>
             <div class="portfolio__wrapper">
-                <a href="uber/index.html" class="portfolio__item"><img class="img" src="img/works/uber.jpg" alt="uber"></a>
+                <a href="uber/index.html" class="portfolio__item"><img class="img" src="img/works/uber.jpg"
+                        alt="uber"></a>
                 <a href="#" class="portfolio__item"><img class="img" src="img/works/pulse.jpg" alt="pulse"></a>
                 <a href="#" class="portfolio__item"><img class="img" src="img/works/bread.jpg" alt="bread"></a>
                 <a href="#" class="portfolio__item vertical"><img class="img" src="img/works/plans.jpg" alt="plans"></a>
@@ -433,17 +434,17 @@
                                 class="contacts__social_link"></a>
                     </div>
                     <div class="title title_fs14 contacts__text">Or leave your details and I will write to you</div>
-                    <form id="contacts-form" action="#" class="contacts__form" novalidate="novalidate">
+                    <form id="contacts-form" action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input name="name" required type="text" placeholder="Your name" id="name" >
+                            <input required name="name" type="text" placeholder="Your name" id="name">
                             <label for="name">name</label>
                         </div>
                         <div class="contacts__input">
-                            <input name="email" required type="email" placeholder="Your email" id="email">
+                            <input required name="email" type="email" placeholder="Your email" id="email">
                             <label for="email">email</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" required id="text" placeholder="Your message"></textarea>
+                            <textarea required name="text" id="text" placeholder="Your message"></textarea>
                             <label for="text">message</label>
                         </div>
                         <div class="contacts__triggers">
@@ -458,6 +459,22 @@
             </div>
         </div>
     </section>
+    <div class="overlay">
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Nice to meet you</div>
+            <div class="modal__descr">Your message has be received and I will be contacting you shortly
+            </div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="circle-up">
+    </a>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/scr1.js"></script>
     <script src="js/script.js"></script>
 </body>
 
