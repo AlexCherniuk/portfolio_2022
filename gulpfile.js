@@ -48,7 +48,7 @@ gulp.task("scripts", function () {
   return gulp
     .src("src/js/**/*.js")
     .pipe(gulp.dest("dist/js"))
-    .pipe(browserSync.stream());
+    // .pipe(browserSync.stream());
 });
 
 gulp.task("fonts", function () {
@@ -63,6 +63,10 @@ gulp.task("icons", function () {
     .src("src/icons/**/*")
     .pipe(gulp.dest("dist/icons"))
     .pipe(browserSync.stream());
+});
+
+gulp.task("mailer", function () {
+  return gulp.src("src/mailer/**/*").pipe(gulp.dest("dist/mailer"));
 });
 
 gulp.task("images", function () {
@@ -81,6 +85,7 @@ gulp.task(
     "styles",
     "scripts",
     "fonts",
+    "mailer",
     "icons",
     "html",
     "images"
