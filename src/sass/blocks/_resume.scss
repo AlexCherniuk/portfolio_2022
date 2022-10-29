@@ -40,24 +40,25 @@
   }
   &__item {
     position: relative;
+    padding-top: 45px ;
     &:before {
       content: '';
       position: absolute;
       width: 43px;
       height: 1px;
-      top: 67px;
+      top: 63px;
       background: black;
     }
     &-head {
       position: relative;
-      padding: 45px 0 0 100px;
+      padding: 0 0 0 100px;
       h4 {
         margin-bottom: 0;
       }
     }
     &-icon {
       position: absolute;
-      top: 57px;
+      top: 8px;
       left: 43px;
       @include before-circle;
       padding: 7px 0 0 16px; 

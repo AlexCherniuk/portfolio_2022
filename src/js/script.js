@@ -43,13 +43,16 @@ $(document).ready(function () {
 
 	$("form").submit(function (e) {
 		e.preventDefault();
+		if (!$(this).valid()) {
+			return;
+		}
 		$.ajax({
 			type: "POST",
 			url: "mailer/smart.php",
 			data: $(this).serialize()
 		}).done(function () {
 			$(this).find("input").val("");
-			$('.overlay, #thanks').fadeIn('slow');
+			$('.overlay, #thaаnks').fadeIn('slow');
 			$('form').trigger('reset');
 		});
 		return false;
@@ -58,11 +61,14 @@ $(document).ready(function () {
 	// pageup
 
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 1500) {
+		if (screen.width < 500) {
+			$('.pageup').fadeOut();
+		}
+		else if ($(this).scrollTop() > 1500) {
 			$('.pageup').fadeIn();
 		} else {
 			$('.pageup').fadeOut();
-		}
+		};
 	});
 
 	// Smooth scroll
