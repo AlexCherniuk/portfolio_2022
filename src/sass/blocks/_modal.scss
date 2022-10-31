@@ -9,7 +9,7 @@
 }
 .modal {
   //Блок с модальными окнами - ставим по центру
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -52,6 +52,6 @@
   }
 }
 
-#consultation, #order, #thanks {
+#thanks {
   display: none;
 }

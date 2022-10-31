@@ -1,14 +1,15 @@
 .price-list {
   margin-top: 66px;
   &__wrapper {
-		width: 1040px;
 		margin: 0 auto;
 		margin-top: 60px;
+    margin-left: 25px;
     display: grid;
     grid-template: repeat(3, minmax(44px, auto)) / repeat(2, 354px);
 		grid-auto-rows: minmax(44px, auto);
-    justify-content: space-between;
+    justify-content: center;
 		row-gap: 20px;
+    column-gap: 300px;
   }
   &__item {
 		position: relative;

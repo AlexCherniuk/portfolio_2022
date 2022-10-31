@@ -52,10 +52,15 @@ $(document).ready(function () {
 			data: $(this).serialize()
 		}).done(function () {
 			$(this).find("input").val("");
-			$('.overlay, #thaаnks').fadeIn('slow');
+			$('.overlay, #thanks').fadeIn('slow');
 			$('form').trigger('reset');
 		});
 		return false;
+	});
+
+	//modal close
+	$('.modal__close').on('click', function () {
+		$('.overlay, #thanks').fadeOut('slow');
 	});
 
 	// pageup
